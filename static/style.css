@@ -83,6 +83,35 @@ p {
     margin: 0 0 1.2em 0;
     line-height: 185%;
 }
+blockquote {
+    margin: 1.2em 0;
+    line-height: 185%;
+}
+blockquote:before {
+    content: 'ˮ';
+    display: inline-block;
+    margin-left: -0.6em;
+    font-size: 2em;
+    transform: translateY(0.2em);
+}
+blockquote cite {
+    float: right;
+    font-style: inherit;
+}
+blockquote cite:before {
+    content: '— ';
+}
+main > section blockquote {
+    max-width: 850px;
+    width: 100%;
+    font-size: 1.4em;
+    padding-left: 3em;
+    padding-right: 0.8em;
+    box-sizing: border-box;
+}
+main > section blockquote cite {
+    font-size: 0.8em;
+}
 a {
     -moz-text-decoration-skip: ink;
     -webkit-text-decoration-skip: ink;
