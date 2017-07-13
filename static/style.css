@@ -69,6 +69,8 @@ main > section {
     flex-grow: 0;
     width: 100%;
     max-width: 1000px;
+    padding: 0 8px;
+    box-sizing: border-box;
 }
 main > section p {
     max-width: 625px;
@@ -78,6 +80,9 @@ main > section a {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 2em 0 0 0;
+}
+h2 {
+    font-size: 1.2em;
 }
 p {
     margin: 0 0 1.2em 0;
@@ -152,4 +157,11 @@ footer a {
 footer .bar1 {
     transform: skewY(2deg) translateY(-30%);
     background: rgba(0,0,0,0.01);
+}
+.hint {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    -moz-text-decoration-color: rgba(0,0,0,0.2);
+    -webkit-text-decoration-color: rgba(0,0,0,0.2);
+    text-decoration-color: rgba(0,0,0,0.2);
 }
