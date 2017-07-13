@@ -1,288 +1,76 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf8">
-        <title>Fundos.io — be part of the solution to funding open source software projects</title>
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Rajdhani" rel="stylesheet">
-        <style type="text/css">
-            body {
-                margin: 0;
-                font-family: 'Merriweather', 'Times New Roman', Times, serif;
-            }
-            header {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: rgba(0,0,0,0.01);
-                position: relative;
-                z-index: 3;
-            }
-            header nav {
-                font-family: 'Rajdhani', sans-serif;
-                font-size: 1.1em;
-                flex-basis: 1000px;
-                flex-shrink: 5;
-                flex-grow: 0;
-                padding: 20px;
-                margin-top: 20px;
-                display: flex;
-                align-content: center;
-                justify-content: space-between;
-            }
-            header nav a {
-                text-decoration: inherit;
-                color: inherit;
-                margin-left: 10px;
-                padding: 5px;
-            }
-            header nav .title {
-                font-size: 1.18em;
-                flex-grow: 0;
-                margin-left: 0;
-            }
-            .bar {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: -1;
-            }
-            header .bar1 {
-                transform: skewY(5deg) translateY(-55%);
-                height: 300%;
-                background: rgba(0,0,0,0.01);
-            }
-            header .bar2 {
-                background: rgba(0,0,0,0.01);
-                height: 300%;
-                transform: skewY(-4deg) translateY(-80%);
-            }
-            header .bar3 {
-                height: 2000%;
-                background: rgba(0,0,0,0.01);
-                transform: skewY(-55deg) translateY(-100%);
-            }
-            main {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                position: relative;
-                z-index: 6;
-            }
-            main > section {
-                flex-shrink: 5;
-                flex-grow: 0;
-                width: 100%;
-                max-width: 1000px;
-            }
-            main > section p {
-                max-width: 625px;
-            }
-            main > section a {
-                color: rgb(75,75,75);
-            }
-            h1, h2, h3, h4, h5, h6 {
-                margin: 2em 0 0 0;
-            }
-            p {
-                margin: 0 0 1.2em 0;
-                line-height: 185%;
-            }
-            a {
-                -moz-text-decoration-skip: ink;
-                -webkit-text-decoration-skip: ink;
-                text-decoration-skip: ink;
-            }
-            .cta-button {
-                display: block;
-                padding: 20px 15px 15px;
-                background: rgb(75,75,75);
-                color: white;
-                max-width: 625px;
-                text-align: center;
-                font-family: 'Rajdhani', sans-serif;
-                text-decoration: none;
-                font-size: 1.8em;
-                transition: background-color 0.4s;
-                margin: 50px 0 30px;
-            }
-            .cta-button:hover {
-                background: rgb(125,125,125);
-            }
-            footer {
-                font-family: 'Rajdhani', sans-serif;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 100px;
-                padding: 80px;
-                background: rgba(0,0,0,0.01);
-                position: relative;
-            }
-            footer a {
-                color: inherit;
-            }
-            footer .bar1 {
-                transform: skewY(2deg) translateY(-30%);
-                background: rgba(0,0,0,0.01);
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="title-link">
-                    <a href="/" class="title">Fundos.io</a>
-                </div>
-                <div class="other-links">
-                    <a href="/company">The company</a>
-                    <a href="/who">Who is building this?</a>
-                </div>
-            </nav>
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-        </header>
-        <main>
-            <section id="the-model-is-broken">
-                <h1>The current model is broken</h1>
-                <p>
-                    Open Source software is used in most software today.
-                    It is interacted with by billions of people on a daily basis.
-                    And much of it was built by developers who did not get paid.
-                </p>
-                <p>
-                    Open Source software must be maintained and updated in order to be useful.
-                    Software is never finished.
-                    Open Source software development often ends up taking a lot of effort and time to properly manage.
-                    And too often Open Source developers end up feeling obligated to keep maintaining the projects they started, even when it is no longer useful to themselves, and still without compensation.
-                </p>
-                <p>
-                    The result: Open Source software is a source of stress for many creators, risks being abandoned altogether, or not updated to deal with vulnerabilities in a timely manner.
-                    This brings a lot of pain for all parties invovled, users and creators.
-                </p>
-            </section>
-            <section id="existing-solutions-are-inadequate">
-                <h1>Existing solutions are inadequate</h1>
-                <p>
-                    Some Open Source projects (larger ones, in code size or user bases, but usually both) have established foundations in order to fund raise and fund the projects.
-                    By now, quite a few of such foundations exist.
-                    Unfortunately, this is rarely an option for mid-sized or smaller open source projects.
-                </p>
-                <p>
-                    In order to ensure that certain Open Source projects are maintained properly, some (large) companies invest in employees that work full time.
-                    This, again, is mostly directed at larger projects, or projects originating from the company itself.
-                    In addition, this often creates an issue of loyalty: these employees are more likely to consider the best actions for their company than for the project, because they are monetarily incentivized to do so.
-                    Mid-sized and small projects rarely get full-time resources allocated to them.
-                </p>
-                <p>
-                    We see two problems:
-                    it is too hard for developers of small or mid-sized Open Source projects to be compensated; and it is too hard to small or mid-sized companies to help fund Open Source development.
-                </p>
-            </section>
-            <section id="it-must-be-made-easier-to-support-open-source-software-creation">
-                <h1>It must be made easier to support Open Source Software creation</h1>
-                <p>
-                    Fundos.io (pronounced <em>fund us</em> but also an abbreviation of the imperative <strong>Fund O</strong>pen <strong>S</strong>ource) is a vision of a platform for Open Source Software funding.
-                    The concept is inspired by other crowdfunding services on the internet, but directed directly at and built for Open Source Software development.
-                </p>
-                <p>
-                    Individuals or companies can pledge an amount of money to the projects they wish to fund, and the amount will be charged monthly.
-                    This makes it more approachable for businesses with smaller budgets to help in the funding of Open Source Software, and at the same time avoid the issue of loyalty, as developers are now paid for their work on a project, not their work for any individual company.
-                </p>
-                <p>
-                    On the developer side, maintainers will be able to set up how the money given to the project is split between collaborators.
-                    For example, to encourage outside help, one might reward non-maintainers who contribute code, raise important issues, or write documentation for the project.
-                    Fundos.io will automatically allocate the funds and allow developers to claim them, or donate them to a charity of their choosing.
-                </p>
-                <p>
-                    Alternatively, a the maintainers of a project might descide to allocate a certain amount of the incoming funds for other Open Source projects that the project itself depends on.
-                    This allows for the funding of less well-known or well-branded projects.
-                </p>
-                <p>
-                    Transparency is in the spirit of Open Source, but it is often not apparent how money is spent once donated to a foundation.
-                    Fundos.io will make it more explicitly visible how money is allocated once donated to a project, allowing for funding decisions to be made based on all the relevant information.
-                </p>
-            </section>
-            <section id="we-would-love-for-you-to-get-involved">
-                <h1>We would love for you to get involved</h1>
-                <p>
-                    Fundos.io will be Open Source.
-                    If you are interested in the project and want to lend a hand, some publicity, discuss the problems and the proposed approaches to solving them, or something else, <a href="mailto:get@deranged.dk">let us know</a>.
-                </p>
-                <a class="cta-button" href="mailto:get@deranged.dk">Get involved</a>
-            </section>
-            <section id="read-more">
-                <h1>Read more&hellip;</h1>
-                <p>
-                    <a href="https://twitter.com/nayafia">Nadia Eghbal</a> wrote a fantastic white paper, published by the Ford Foundation, called <em><a href="http://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</a></em>, which touches on and supports the issues described here. It is also the source of the pull quotes above.
-                </p>
-            </section>
-        </main>
-        <main>
-            <section id="who-is-building-this">
-                <h1>Who is building this?</h1>
-                <p>
-                    <a href="http://deranged.dk" target="_blank">deranged</a> is a small consultancy out of Copenhagen that loves Open Source (we make as much of our code as possible easily available to other developers) and getting paid for work (in fact, we insist).
-                </p>
-                <p>
-                    We are currently the main driving force behind the project.
-                    If you want to help the project come about, you should totally <a href="mailto:get@deranged.dk">refer consultancy work to us</a>.
-                    We appreciate it. 🙂
-                </p>
-                <p>
-                    The current contributors to the project are:
-                    <ul>
-                        <li><a href="http://hypesystem.dk/">Niels Roesen Abildgaard</a> (<a href="https://github.com/hypesystem/">github</a>, <a href="https://twitter.com/hypesystem">twitter</a>) from <a href="http://deranged.dk">deranged</a></li>
-                    </ul>
-                </p>
-            </section>
-        </main>
-        <main>
-            <section id="fundos-the-company">
-                <h1>Fundos.io, the company</h1>
-                <p>
-                    Fundos.io will be run as a company, because we will be dealing with people's money.
-                    In the name of transparency, here are the plans for company structure.
-                </p>
-                <p>
-                    At <a href="http://deranged.dk" target="_blank">deranged</a> we believe strongly in Open Source, and so all of the source code for the project will be released under a free-to-use (including for commercial purposes) license.
-                    This fits with our existing business strategies and has an important implication: we need to also deliver on service and support in order to keep running.
-                    If we do poorly, the project can be forked and taken up by other entities, to run in a different way.
-                </p>
-                <p>
-                    We plan on compensating contributors to the software.
-                    That's what we are building a platform for, and part of our revenue will go towards paying contributors to the project.
-                    In fact, after paying for staff, infrastructure, etc. <em>at least</em> 50% of our profits will go to paying contributors.
-                    We are not in this to make a buck, and will not pay out anything to company owners.
-                    (This can be verified by checking the accounts for the company, which are public in Denmark.)
-                </p>
-                <p>
-                    Now for revenue.
-                    How are we planning on getting any?
-                    Here, the model will be very much like other crowdfunding platforms, where a percentage of the money paid goes to the platform.
-                    Unlike other crowdfunding platforms, however, we will make it abundantly clear exactly how the money is split, both to maintainers of projects and to users (companies or individuals) pledging funds.
-                </p>
-                <p>
-                    In the end, this is a project that comes from the heart: we strongly believe developers should be paid for their work, whether it's source code be open or closed.
-                    We are not in this to make a profit.
-                </p>
-                <p>
-                    We will not take outside funding.
-                    We aim to make the platform sustainable, and grow it at the rate that reveals itself to be possible.
-                    It is not a goal in and of itself to grow.
-                </p>
-                <p>
-                    We are just building a platform supporting something that we strongly believe in.
-                    If you believe in it, too, we hope you will convince your employer to donate to Open Source projects they use, when the platform launches.
-                </p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; Fundos, a <a href="http://deranged.dk" target="_blank">deranged</a> project. 2017.</p>
-            <div class="bar bar1"></div>
-        </footer>
-    </body>
-</html>
++++
++++
+<section id="the-model-is-broken">
+    <h1>The current model is broken</h1>
+    <p>
+        Open Source software is used in most software today.
+        It is interacted with by billions of people on a daily basis.
+        And much of it was built by developers who did not get paid.
+    </p>
+    <p>
+        Open Source software must be maintained and updated in order to be useful.
+        Software is never finished.
+        Open Source software development often ends up taking a lot of effort and time to properly manage.
+        And too often Open Source developers end up feeling obligated to keep maintaining the projects they started, even when it is no longer useful to themselves, and still without compensation.
+    </p>
+    <p>
+        The result: Open Source software is a source of stress for many creators, risks being abandoned altogether, or not updated to deal with vulnerabilities in a timely manner.
+        This brings a lot of pain for all parties invovled, users and creators.
+    </p>
+</section>
+<section id="existing-solutions-are-inadequate">
+    <h1>Existing solutions are inadequate</h1>
+    <p>
+        Some Open Source projects (larger ones, in code size or user bases, but usually both) have established foundations in order to fund raise and fund the projects.
+        By now, quite a few of such foundations exist.
+        Unfortunately, this is rarely an option for mid-sized or smaller open source projects.
+    </p>
+    <p>
+        In order to ensure that certain Open Source projects are maintained properly, some (large) companies invest in employees that work full time.
+        This, again, is mostly directed at larger projects, or projects originating from the company itself.
+        In addition, this often creates an issue of loyalty: these employees are more likely to consider the best actions for their company than for the project, because they are monetarily incentivized to do so.
+        Mid-sized and small projects rarely get full-time resources allocated to them.
+    </p>
+    <p>
+        We see two problems:
+        it is too hard for developers of small or mid-sized Open Source projects to be compensated; and it is too hard to small or mid-sized companies to help fund Open Source development.
+    </p>
+</section>
+<section id="it-must-be-made-easier-to-support-open-source-software-creation">
+    <h1>It must be made easier to support Open Source Software creation</h1>
+    <p>
+        Fundos.io (pronounced <em>fund us</em> but also an abbreviation of the imperative <strong>Fund O</strong>pen <strong>S</strong>ource) is a vision of a platform for Open Source Software funding.
+        The concept is inspired by other crowdfunding services on the internet, but directed directly at and built for Open Source Software development.
+    </p>
+    <p>
+        Individuals or companies can pledge an amount of money to the projects they wish to fund, and the amount will be charged monthly.
+        This makes it more approachable for businesses with smaller budgets to help in the funding of Open Source Software, and at the same time avoid the issue of loyalty, as developers are now paid for their work on a project, not their work for any individual company.
+    </p>
+    <p>
+        On the developer side, maintainers will be able to set up how the money given to the project is split between collaborators.
+        For example, to encourage outside help, one might reward non-maintainers who contribute code, raise important issues, or write documentation for the project.
+        Fundos.io will automatically allocate the funds and allow developers to claim them, or donate them to a charity of their choosing.
+    </p>
+    <p>
+        Alternatively, a the maintainers of a project might descide to allocate a certain amount of the incoming funds for other Open Source projects that the project itself depends on.
+        This allows for the funding of less well-known or well-branded projects.
+    </p>
+    <p>
+        Transparency is in the spirit of Open Source, but it is often not apparent how money is spent once donated to a foundation.
+        Fundos.io will make it more explicitly visible how money is allocated once donated to a project, allowing for funding decisions to be made based on all the relevant information.
+    </p>
+</section>
+<section id="we-would-love-for-you-to-get-involved">
+    <h1>We would love for you to get involved</h1>
+    <p>
+        Fundos.io will be Open Source.
+        If you are interested in the project and want to lend a hand, some publicity, discuss the problems and the proposed approaches to solving them, or something else, <a href="mailto:get@deranged.dk">let us know</a>.
+    </p>
+    <a class="cta-button" href="mailto:get@deranged.dk">Get involved</a>
+</section>
+<section id="read-more">
+    <h1>Read more&hellip;</h1>
+    <p>
+        <a href="https://twitter.com/nayafia">Nadia Eghbal</a> wrote a fantastic white paper, published by the Ford Foundation, called <em><a href="http://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</a></em>, which touches on and supports the issues described here. It is also the source of the pull quotes above.
+    </p>
+</section>

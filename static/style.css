@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.01);
+    position: relative;
+    z-index: 3;
+}
+header nav {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    flex-basis: 1000px;
+    flex-shrink: 5;
+    flex-grow: 0;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+header nav a {
+    text-decoration: inherit;
+    color: inherit;
+    margin-left: 10px;
+    padding: 5px;
+}
+header nav .title {
+    font-size: 1.18em;
+    flex-grow: 0;
+    margin-left: 0;
+}
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header .bar1 {
+    transform: skewY(5deg) translateY(-55%);
+    height: 300%;
+    background: rgba(0,0,0,0.01);
+}
+header .bar2 {
+    background: rgba(0,0,0,0.01);
+    height: 300%;
+    transform: skewY(-4deg) translateY(-80%);
+}
+header .bar3 {
+    height: 2000%;
+    background: rgba(0,0,0,0.01);
+    transform: skewY(-55deg) translateY(-100%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 6;
+}
+main > section {
+    flex-shrink: 5;
+    flex-grow: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+main > section p {
+    max-width: 625px;
+}
+main > section a {
+    color: rgb(75,75,75);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 2em 0 0 0;
+}
+p {
+    margin: 0 0 1.2em 0;
+    line-height: 185%;
+}
+a {
+    -moz-text-decoration-skip: ink;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+}
+.cta-button {
+    display: block;
+    padding: 25px 15px 20px;
+    color: rgb(75,75,75);
+    background: white;
+    max-width: 405px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.4s, color 0.4s;
+    box-sizing: border-box;
+    margin: 50px 110px 30px;
+    border: 1px solid rgb(75,75,75);
+}
+.cta-button:hover {
+    color: white;
+    background: rgb(75,75,75);
+}
+footer {
+    font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 80px;
+    background: rgba(0,0,0,0.01);
+    position: relative;
+}
+footer a {
+    color: inherit;
+}
+footer .bar1 {
+    transform: skewY(2deg) translateY(-30%);
+    background: rgba(0,0,0,0.01);
+}
